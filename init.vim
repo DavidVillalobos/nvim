@@ -41,5 +41,5 @@ colorscheme codedark
 " Recomended Config for coc.vim
 runtime! ./config/coc_config.vim
 " Recomended Config for markdown-preview.nvim
-runtime! ./config/markdown-preview.vim
+runtime! ./config/markdown-preview-config.vim
 
