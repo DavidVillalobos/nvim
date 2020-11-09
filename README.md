@@ -49,12 +49,15 @@ sudo make install
 
 Pip install:
 ~~~bash
+sudo apt-get install python-setuptools
+sudo apt-get install -y python-pip
+sudo python -m pip install pynvim
 sudo apt-get install -y python3-setuptools
 sudo apt-get install -y python3-pip
-python3 -m pip install wheel
-python3 -m pip install pynvim
-python3 -m pip install jedi pylint
-python3 -m pip install neovim-remote
+sudo python3 -m pip install wheel
+sudo python3 -m pip install pynvim
+sudo python3 -m pip install jedi pylint
+sudo python3 -m pip install neovim-remote
 sudo apt-get install -y texlive
 sudo apt-get install -y latexmk
 ~~~
