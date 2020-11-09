@@ -163,20 +163,20 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 
 " Resume latest coc list.
-global_extensions = [
-      \ 'coc-marketplace',
-      \ 'coc-python',
-      \ 'coc-snippets',
-      \ 'coc-json',
-      \ 'coc-html',
-      \ 'coc-xml',
-      \ 'coc-css',
-      \ 'coc-emmet',
-      \ 'coc-tsserver',
-      \ 'coc-tslint-plugin',
-      \ 'coc-vetur',
-      \ 'coc-java',
-      \ 'coc-clangd',
-      \ 'coc-explorer',
-      \ 'coc-vimtex'
-      \ ]
+let g:coc_global_extensions = [
+\ 'coc-marketplace',
+\ 'coc-python',
+\ 'coc-snippets',
+\ 'coc-json',
+\ 'coc-html',
+\ 'coc-xml',
+\ 'coc-css',
+\ 'coc-emmet',
+\ 'coc-tsserver',
+\ 'coc-tslint-plugin',
+\ 'coc-vetur',
+\ 'coc-java',
+\ 'coc-clangd',
+\ 'coc-explorer',
+\ 'coc-vimtex'
+\ ]
