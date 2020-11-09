@@ -95,6 +95,10 @@ source ~/.profile
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 ~~~
 
+# GOLANG
+~~~bash
+sudo apt-get install golang
+~~~
 Add this in .bashrc
 ~~~bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -127,4 +131,25 @@ curl -fLo ~/.config/nvim/autoload/plug.vim \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~~~
 
+## Problemas
 
+* Si windows no encuentra los ejecutables(.exe) o no puede ejecutarlos
+
+Proceda a realizar lo siguiente 
+Abrir la configuracion del perfil de usuario
+~~~bash
+sudo nvim /etc/profile
+~~~
+Y por favor comente las siguientes lineas como:  
+~~~
+# if [ "`id -u`" -eq 0 ]; then
+#   PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+# else
+#   PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+# fi
+# export PATH
+~~~
+Probablemente el distro este cambiando el PATH y no permite encontrar ni ejecutar los .exe
+Mas información en:
+[Click aqui](
+https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#command-not-found-when-executing-windows-exe-in-linux)
