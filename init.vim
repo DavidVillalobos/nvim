@@ -11,6 +11,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python'
 let g:plugins_folder = '~/.config/nvim/plugged'
 let g:tex_flavor = 'latex'
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Move Lines
 nnoremap <S-Up> :m-2<CR>
@@ -30,7 +31,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tomasiser/vim-code-dark'
 Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 call plug#end()
 
 " Theme Code Dark
@@ -42,4 +42,7 @@ colorscheme codedark
 runtime! ./config/coc_config.vim
 " Recomended Config for markdown-preview.nvim
 runtime! ./config/markdown-preview-config.vim
+" Rainbow bracket pair colorizer
+runtime! ./config/rainbow.vim
+
 
