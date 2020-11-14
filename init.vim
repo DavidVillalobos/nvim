@@ -5,6 +5,8 @@
 set number
 set relativenumber
 set modifiable
+setlocal shiftwidth=2 
+setlocal tabstop=2
 
 " Variables
 let g:python3_host_prog = '/usr/bin/python3'
@@ -14,6 +16,7 @@ let g:tex_flavor = 'latex'
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Move Lines
+
 nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
