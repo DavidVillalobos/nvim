@@ -31,6 +31,7 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-sandwich'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" :CocCommand clangd.install " Execute this command for install
 Plug 'tomasiser/vim-code-dark'
 Plug 'lervag/vimtex'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
