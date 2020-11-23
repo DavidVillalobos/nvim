@@ -5,6 +5,8 @@
 3. Instalar Windows Terminal (Opcional).
 Puede guiarse con el siguiente tutorial: 
 		* https://terminaldelinux.com/terminal/wsl/instalacion-configuracion-wsl/
+Nota: Para actualizar a wsl 2 debe instalar el kernel de linux disponible en  
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package  
 
 # Configuracion del Distro Debian
 
