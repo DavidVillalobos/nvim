@@ -158,10 +158,10 @@ Mas información en:
 [Click aqui](
 https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#command-not-found-when-executing-windows-exe-in-linux)
 
-* E492: Not an editor command: Pluginstall 
-No se encuentra el comando PlugInstall, verifique que la codifiación sea UNIX en todos los archivos
-Abra el archivo con nvim y escriba 
+* Problema de Codificación de algun archivo o E492: Not an editor command: Pluginstall 
+No se encuentra el comando PlugInstall, probablemente la codifiación no este en UNIX en todos los archivos
+Abra cada archivo con nvim y escriba 
 ~~~bash
 :set ff=unix 
 ~~~
-Para cambiar la codificación e intentelo nuevamente
+Para cambiar la codificación a UNIX e intentelo nuevamente
