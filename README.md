@@ -129,6 +129,7 @@ Se debe guardar cerrar e iniciar de nuevo para que apliquen los cambios
 Ahora se instalara el administrador de plugins
 ~~~bash
 cd ~
+mkdir .config/nvim/plugged
 mkdir .config/nvim/autoload
 curl -fLo ~/.config/nvim/autoload/plug.vim \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
