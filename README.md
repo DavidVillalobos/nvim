@@ -134,7 +134,7 @@ mkdir .config/nvim/autoload
 curl -fLo ~/.config/nvim/autoload/plug.vim \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~~~
-
+Configure el 
 ## Problemas
 
 * Si windows no encuentra los ejecutables(.exe) o no puede ejecutarlos
@@ -157,3 +157,11 @@ Probablemente el distro este cambiando el PATH y no permite encontrar ni ejecuta
 Mas información en:
 [Click aqui](
 https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#command-not-found-when-executing-windows-exe-in-linux)
+
+* E492: Not an editor command: Pluginstall 
+No se encuentra el comando PlugInstall, verifique que la codifiación sea UNIX en todos los archivos
+Abra el archivo con nvim y escriba 
+~~~bash
+:set ff=unix 
+~~~
+Para cambiar la codificación e intentelo nuevamente
