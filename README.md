@@ -129,11 +129,12 @@ Se debe guardar cerrar e iniciar de nuevo para que apliquen los cambios
 Ahora se instalara el administrador de plugins
 ~~~bash
 cd ~
+mkdir .config/nvim/plugged
 mkdir .config/nvim/autoload
 curl -fLo ~/.config/nvim/autoload/plug.vim \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ~~~
-
+Configure el 
 ## Problemas
 
 * Si windows no encuentra los ejecutables(.exe) o no puede ejecutarlos
@@ -156,3 +157,11 @@ Probablemente el distro este cambiando el PATH y no permite encontrar ni ejecuta
 Mas información en:
 [Click aqui](
 https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#command-not-found-when-executing-windows-exe-in-linux)
+
+* Problema de Codificación de algun archivo o E492: Not an editor command: Pluginstall 
+No se encuentra el comando PlugInstall, probablemente la codifiación no este en UNIX en todos los archivos
+Abra cada archivo con nvim y escriba 
+~~~bash
+:set ff=unix 
+~~~
+Para cambiar la codificación a UNIX e intentelo nuevamente
