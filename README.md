@@ -19,7 +19,7 @@ nano ~/.bashrc
 ~~~
 
 # Alias
-Primeramente añadir algunos alias, tambein se pueden añadir al final 
+Primeramente añadir algunos alias, tambien se pueden añadir al final 
 del archivo **~/.bashrc** o crear un archivo especifico para almacenar 
 los alias como 
 ~~~bash
