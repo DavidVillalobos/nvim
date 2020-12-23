@@ -1,6 +1,6 @@
 " Configurations for Neovim
 " Author: Luis David Villalobos González
-
+    
 " Configurations
 set number
 set relativenumber
