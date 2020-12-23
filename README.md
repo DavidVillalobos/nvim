@@ -87,7 +87,7 @@ sudo update-alternatives --install /usr/bin/xdg-open xdg-open /usr/bin/wsl-open 
 sudo apt-get install -y maven
 sudo apt-get install -y default-jre
 sudo apt-get install -y default-jdk
-echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64" >> ~/.profile
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64" >> ~/.profile
 echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.profile
 source ~/.profile
 ~~~
